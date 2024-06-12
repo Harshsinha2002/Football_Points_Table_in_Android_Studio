@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_gravity="center|center_horizontal|center_vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TableLayout
+                            android:id="@+id/tableLayout"
+                            android:layout_width="600dp"
+                            android:layout_height="305dp"
+                            android:stretchColumns="1">
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:text="Team"
+                                    android:textAlignment="center"
+                                    android:padding="8dp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:text="Matches"
+                                    android:textAlignment="center"
+                                    android:padding="8dp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:text="Points"
+                                    android:textAlignment="center"
+                                    android:padding="8dp"
+                                    android:textStyle="bold"/>
+
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:text="GD"
+                                    android:textAlignment="center"
+                                    android:padding="8dp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:text="GF"
+                                    android:textAlignment="center"
+                                    android:padding="8dp"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="35dp"
+                                    android:text="GA"
+                                    android:textAlignment="center"
+                                    android:padding="8dp"
+                                    android:textStyle="bold"/>
+                            </TableRow>
+
+
+                        </TableLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
